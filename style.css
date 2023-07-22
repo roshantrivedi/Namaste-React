@@ -31,7 +31,9 @@
    padding: 10px;
    width: 200px;
    margin: 5px;
-   background-color: #F5AF74;
+   background-color: #E89275;
+   border-style: outset;
+   border-radius: 6px;
 }
 
 .res-card:hover{
@@ -59,4 +61,23 @@ h4{
 
 .filter-btn{
    margin: 10px;
+}
+
+.shimmer-container{
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-between;
+}
+
+.shimmer-card{
+   width: 200px;
+   height: 400px;
+   margin: 22px;
+   background-color: #CACACA;
+   border-style: outset;
+   border-radius: 6px;
+}
+
+.search-button{
+   margin: 5px;
 }

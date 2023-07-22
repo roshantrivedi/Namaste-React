@@ -1,7 +1,20 @@
-const Search = () =>{
+import { useState } from 'react';
+
+const Search = ({restList, setFilterRestList}) =>{
+
+    const [searchText, setSearchText] = useState('');
+
     return (
         <div className='search'>
-            <input type='search' /><label> Search</label>
+            <input type='search' className="search-box" 
+            value={searchText} onChange={(e) => setSearchText(e.target.value)}
+            />
+            
+            <button className="search-button" onClick={()=>{
+                const FR = restList.filter( (res) =>
+                res.data.name.toLowerCase().includes(searchText.toLowerCase()) );
+                setFilterRestList(FR);
+            }}> Search </button>
         </div>
     )
 }
