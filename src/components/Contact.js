@@ -1,4 +1,4 @@
-import Usercard from "../UserCard"
+import Usercard from "./UserCard"
 
 const Contact = () => {
   return (

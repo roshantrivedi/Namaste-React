@@ -1,6 +1,6 @@
 import React from "react";
 
-import { USERDATA_API } from "./utils/constants";
+import { USERDATA_API } from "../utils/constants";
 
 class Usercard extends React.Component{
 
