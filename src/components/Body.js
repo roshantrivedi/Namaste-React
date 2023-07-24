@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import { SWIGGY_API } from "../utils/constants";
 
@@ -44,7 +45,7 @@ const Body = () => {
                 {
                     filterRestList.map(function (item) {
                         return (
-                            <ResCard key={item.data.id} resList={item.data}/>
+                            <Link className="rescard-link" key={item.data.id} to={"/restaurants/" + item.data.id}><ResCard resList={item.data} /></Link>
                         );
                     })
                 }

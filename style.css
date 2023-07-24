@@ -81,3 +81,25 @@ h4{
 .search-button{
    margin: 5px;
 }
+
+.rescard-link{
+   text-decoration: none;
+}
+
+.rescard-link:hover{
+   text-decoration: underline;
+}
+
+.user-card{
+   border: 1px solid black;
+   padding: 5px;
+}
+
+.contact{
+   margin: 10px 0px;
+}
+
+.profile-pic{
+   height: 200px;
+   width: 200px;
+}
