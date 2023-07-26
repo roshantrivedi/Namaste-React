@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import { SWIGGY_API } from "../utils/constants";
+import resList from "../utils/demoData";
 
 import Search from "./Search";
 import ResCard from "./ResCard";
@@ -15,11 +16,11 @@ const Body = () => {
     function handleClick(){
         const filteredList = restList.filter( (restaurant) => restaurant.data.avgRating > 4);
         setResList(filteredList);
-        console.log(restList);
+        //console.log(restList);
     }
 
     function resetFilter(){
-        console.log(restList);
+        //console.log(restList);
         setResList(restList);
     }
 
@@ -29,7 +30,6 @@ const Body = () => {
 
     const fetchData = async () => {
         const data = await fetch(SWIGGY_API);
-
         const json = await data.json();
         setResList(json?.data?.cards[2]?.data?.data?.cards);
         setFilterRestList(json?.data?.cards[2]?.data?.data?.cards);
