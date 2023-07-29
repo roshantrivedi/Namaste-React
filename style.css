@@ -1,3 +1,7 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
 .header{
    display: flex;
    justify-content: space-between;
@@ -102,4 +106,14 @@ h4{
 .profile-pic{
    height: 200px;
    width: 200px;
+}
+
+.top-rated{
+   position: absolute;
+   margin: 5px 10px;
+   padding: 3px;
+   background-color: black;
+   text-decoration: none;
+   color: white;
+   border-radius: 5px;
 }

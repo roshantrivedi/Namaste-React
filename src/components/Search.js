@@ -12,7 +12,7 @@ const Search = ({restList, setFilterRestList}) =>{
             
             <button className="search-button" onClick={()=>{
                 const FR = restList.filter( (res) =>
-                res.data.name.toLowerCase().includes(searchText.toLowerCase()) );
+                res.info.name.toLowerCase().includes(searchText.toLowerCase()) );
                 setFilterRestList(FR);
             }}> Search </button>
         </div>
