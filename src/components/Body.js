@@ -39,7 +39,7 @@ const Body = () => {
         setFilterRestList(
             json?.data?.cards[5].card?.card?.gridElements?.infoWithStyle?.restaurants
         );
-        console.log(filterRestList);
+        //console.log(filterRestList);
     };
 
     return (

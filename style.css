@@ -117,3 +117,37 @@ h4{
    color: white;
    border-radius: 5px;
 }
+
+.res-menu{
+   text-align: center;
+}
+
+.res-category{ 
+   background-color: #FFCB9A;
+   margin: 15px;
+   padding: 5px; 
+   border-bottom: 1px solid black;
+}
+
+.category-title{
+   font-size : 15px;
+   font-weight: bold;
+}
+
+.res-cat{
+   display:flex;
+   justify-content:space-between;
+   cursor: pointer;
+}
+
+.cuisine-list{
+   display:flex;
+}
+
+.food-list{
+   text-align:left;
+}
+
+.name-cost{
+   color: red;
+}
