@@ -45,12 +45,12 @@ const Body = () => {
     return (
         <div className="body">
             <Search restList={restList} setFilterRestList={setFilterRestList} />
-            <button className="filter-btn" onClick={handleClick}>
+            {/* <button className="filter-btn" onClick={handleClick}>
                 Click to Filter Rating above 4
             </button>
             <button className="filter-btn" onClick={resetFilter}>
                 Reset Filter
-            </button>
+            </button> */}
             <div className="res-container">
                 {filterRestList.map(function (item) {
                     return (

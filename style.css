@@ -63,6 +63,10 @@ h4{
    color: black;
 }
 
+h5{
+   color: red;
+}
+
 .filter-btn{
    margin: 10px;
 }
@@ -150,4 +154,24 @@ h4{
 
 .name-cost{
    color: red;
+}
+
+.logged-user{
+   font-weight: bold;
+}
+
+.add-button{
+   color: white;
+   background-color: black;
+   border-radius: 5px;
+   padding: 10px;
+   margin: 0.3rem;
+   cursor: pointer;
+}
+
+.cart{
+   margin: 10px 0px;
+   padding: 5px;
+   text-align: center;
+   color: orange;
 }

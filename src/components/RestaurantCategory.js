@@ -2,13 +2,12 @@ import React, { useState } from "react";
 
 import CuisineList from "./CuisineList";
 
-const RestaurantCategory = ({ items }) => {
-  const [showItems, setShowItems] = useState(false);
+const RestaurantCategory = ({ items,showItems,setShowIndex }) => {
 
   const { cuisine, title, name, cost } = items;
 
   const handleClick = () => {
-    setShowItems(!showItems);
+    setShowIndex();
   };
 
   return (
